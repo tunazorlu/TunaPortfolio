@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34902.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TunaPortfolio", "TunaPortfolio\TunaPortfolio.csproj", "{7D27F610-6D8A-4673-8B83-6A5A71A35D22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TunaPortfolio.Client", "TunaPortfolio.Client\TunaPortfolio.Client.csproj", "{D03D5F99-4B25-4A22-82C8-2CFEAEE6D184}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D27F610-6D8A-4673-8B83-6A5A71A35D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D27F610-6D8A-4673-8B83-6A5A71A35D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D27F610-6D8A-4673-8B83-6A5A71A35D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D27F610-6D8A-4673-8B83-6A5A71A35D22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D03D5F99-4B25-4A22-82C8-2CFEAEE6D184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D03D5F99-4B25-4A22-82C8-2CFEAEE6D184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D03D5F99-4B25-4A22-82C8-2CFEAEE6D184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D03D5F99-4B25-4A22-82C8-2CFEAEE6D184}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF203BF8-4B6F-4708-932E-52871D35A18A}
+	EndGlobalSection
+EndGlobal
