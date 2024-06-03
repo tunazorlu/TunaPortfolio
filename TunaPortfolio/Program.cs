@@ -1,5 +1,5 @@
-using TunaPortfolio1.Client.Pages;
-using TunaPortfolio1.Components;
+using TunaPortfolio.Client.Pages;
+using TunaPortfolio.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +30,6 @@ app.UseAntiforgery();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
     .AddInteractiveWebAssemblyRenderMode()
-    .AddAdditionalAssemblies(typeof(TunaPortfolio1.Client._Imports).Assembly);
+    .AddAdditionalAssemblies(typeof(TunaPortfolio.Client._Imports).Assembly);
 
 app.Run();
