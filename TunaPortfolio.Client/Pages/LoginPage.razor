@@ -42,8 +42,8 @@
                             <div class="mt-10 space-y-5">
 
                                 <div class="relative">
-                                    <label for="email" class="mb-1 block text-sm font-medium text-gray-700">Email</label>
-                                    <input class="w-full rounded-lg border border-blue-300 px-4 py-3.5 text-base text-gray-700 placeholder-gray-500 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-gradient-to-r focus:ring-from-[#00B4DB] focus:ring-to-[#0083B0]" type="email" id="email" name="email" placeholder="Enter your email">
+                                    <label for="email" class="mb-1 block text-sm font-medium text-gray-700">Email: @Email</label>
+                                    <input class="w-full rounded-lg border border-blue-300 px-4 py-3.5 text-base text-gray-700 placeholder-gray-500 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-gradient-to-r focus:ring-from-[#00B4DB] focus:ring-to-[#0083B0]" type="email" id="email" name="email" placeholder="Enter your email" @oninput="IsimDegistir">
                                 </div>
 
                                 <div class="relative">
@@ -73,6 +73,12 @@
 </section>
 
 @code {
+    private string Email { get; set; }
+
+    private void IsimDegistir(ChangeEventArgs e)
+    {
+        Email = e.Value.ToString();
+    }
 
     private LoginModel loginModel = new LoginModel();
 

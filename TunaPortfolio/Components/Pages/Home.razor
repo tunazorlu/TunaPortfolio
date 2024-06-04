@@ -1,6 +1,9 @@
 ﻿@page "/"
+@using System.Globalization
 
 <PageTitle>Portfolyo</PageTitle>
+
+
 
 <section class="bg-white">
     <div class="mx-auto grid max-w-screen-xl px-4 pb-8 pt-20 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
@@ -8,7 +11,7 @@
             <h1 class="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl">
                 Building digital <br>products &amp; brands.
             </h1>
-
+            <h3 class="mb-4 max-w-2xl text-4xl font-bold leading-none tracking-tight md:text-5xl xl:text-6xl">Bugün @DateTime.UtcNow.ToString("dd MMMM yyyy") @Gün!</h3>
             <p class="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 lg:mb-8 md:text-lg lg:text-xl">
                 This
                 free and open-source landing page template was built using the utility classes from
@@ -302,3 +305,8 @@
         </div>
     </div>
 </section>
+
+@code
+{
+    string Gün = CultureInfo.GetCultureInfo("tr-TR").DateTimeFormat.DayNames[(int)DateTime.Now.DayOfWeek];
+}
