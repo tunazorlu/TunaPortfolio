@@ -1,5 +1,5 @@
 module.exports = {
-    content: ['./**/*.{razor,html,cshtml}', '../TunaPortfolio1.Client/**/*.{razor,html,cshtml}'],
+    content: ['./**/*.{razor,html,cshtml}', '../TunaPortfolio.Client/**/*.{razor,html,cshtml}'],
     theme: {
         extend: {},
     },

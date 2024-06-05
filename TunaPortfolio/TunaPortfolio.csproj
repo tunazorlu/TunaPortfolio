@@ -7,6 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Styles\app.css" />
+    <None Remove="Styles\app.output.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Styles\app.css" />
+    <Content Include="Styles\app.output.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\TunaPortfolio.Client\TunaPortfolio.Client.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.6" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.6" />
