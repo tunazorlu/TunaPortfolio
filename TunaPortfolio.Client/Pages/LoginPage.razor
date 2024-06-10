@@ -2,6 +2,8 @@
 @rendermode InteractiveWebAssembly
 @page "/login"
 
+<PageTitle>Giriş Yap!</PageTitle>
+
 <section class="bg-[#EEF7FF] flex h-screen items-center justify-center">
     <div class="container 2xl:px-80 xl:px-52">
         <div class="shadow-[0_2px_8px_rgba(99,99,99,0.2)] overflow-hidden rounded-lg bg-white">
@@ -11,9 +13,9 @@
                     <span class="font-semibold uppercase tracking-widest">BLAZOR.DESIGN</span>
                     <div class="flex h-full flex-col justify-center text-center">
                         <h1 class="mb-4 text-3xl">Get Started</h1>
-                        <p class="font-normal leading-relaxed text-white">Create a new account and unlock a world of possibilities with us!</p>
+                        <p class="font-normal leading-relaxed text-white">Yeni bir hesap oluşturun ve bizimle sonsuz imkanlar dünyasının kapılarını aralayın!</p>
                         <div class="mt-8">
-                            <button @onclick="HandleSignUp" class="rounded-full border px-14 py-2.5 text-sm font-medium text-white transition duration-300 hover:bg-white hover:text-[#03AED2]">Sign Up</button>
+                            <button @onclick="HandleSignUp" class="rounded-full border px-14 py-2.5 text-sm font-medium text-white transition duration-300 hover:bg-white hover:text-[#03AED2]">Kayıt Ol</button>
                         </div>
                     </div>
                 </div>
@@ -42,13 +44,13 @@
                             <div class="mt-10 space-y-5">
 
                                 <div class="relative">
-                                    <label for="email" class="mb-1 block text-sm font-medium text-gray-700">Email: @Email</label>
-                                    <input class="w-full rounded-lg border border-blue-300 px-4 py-3.5 text-base text-gray-700 placeholder-gray-500 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-gradient-to-r focus:ring-from-[#00B4DB] focus:ring-to-[#0083B0]" type="email" id="email" name="email" placeholder="Enter your email" @oninput="IsimDegistir">
+                                    <label for="email" class="mb-1 block text-sm font-medium text-gray-700">Eposta: @Email</label>
+                                    <input class="w-full rounded-lg border border-blue-300 px-4 py-3.5 text-base text-gray-700 placeholder-gray-500 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-gradient-to-r focus:ring-from-[#00B4DB] focus:ring-to-[#0083B0]" type="email" id="email" name="email" placeholder="Epostanızı girin" @oninput="IsimDegistir">
                                 </div>
 
                                 <div class="relative">
                                     <label for="pwd" class="mb-1 block text-sm font-medium text-gray-700">Password</label>
-                                    <input class="w-full rounded-lg border border-blue-300 px-4 py-3.5 text-base text-gray-700 placeholder-gray-500 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-gradient-to-r focus:ring-from-[#00B4DB] focus:ring-to-[#0083B0]" type="password" id="pwd" name="pwd" placeholder="Enter your password">
+                                    <input class="w-full rounded-lg border border-blue-300 px-4 py-3.5 text-base text-gray-700 placeholder-gray-500 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-gradient-to-r focus:ring-from-[#00B4DB] focus:ring-to-[#0083B0]" type="password" id="pwd" name="pwd" placeholder="Parolanızı girin">
                                 </div>
                                 @*  <div class="relative">
                                 <InputText @bind-Value="loginModel.Email" class="w-full rounded-lg border-gray-300 px-4 py-2.5 pl-11 text-sm text-gray-500 focus:border-gray-400" type="email" id="email" placeholder="Email" />

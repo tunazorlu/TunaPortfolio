@@ -1,6 +1,8 @@
 ﻿@page "/"
 @using System.Globalization
 
+@inject NavigationManager navigationManager
+
 <PageTitle>Portfolyo</PageTitle>
 
 
@@ -31,7 +33,7 @@
                     </svg> View on GitHub
                 </a>
 
-                <a href="" target="_blank"
+                <a href="" target="_blank" @onclick="(Refresh1)"
                    class="mb-2 mr-2 inline-flex w-full items-center justify-center rounded-lg border border-gray-200 bg-white px-5 py-3 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:z-10 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 sm:w-auto dark:focus:ring-gray-700 dark:hover:text-white dark:hover:bg-gray-700">
 
                     <svg class="mr-2 h-4 w-4" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300"
@@ -308,5 +310,9 @@
 
 @code
 {
+    protected void Refresh1()
+    {
+        navigationManager.Refresh(true);
+    }
     string Gün = CultureInfo.GetCultureInfo("tr-TR").DateTimeFormat.DayNames[(int)DateTime.Now.DayOfWeek];
 }
